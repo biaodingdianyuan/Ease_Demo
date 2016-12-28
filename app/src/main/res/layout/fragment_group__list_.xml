@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:hyphenate="http://schemas.android.com/apk/res-auto">
+
+    <com.hyphenate.easeui.widget.EaseTitleBar
+        android:id="@+id/group_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        hyphenate:titleBarTitle="群组"
+        hyphenate:titleBarRightImage="@drawable/add"
+
+        hyphenate:titleBarLeftImage="@drawable/em_mm_title_back"
+        />
+
+
+
+    <ListView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/groupList"></ListView>
+
+<Button
+    android:layout_weight="0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="创建群组"
+    android:id="@+id/create_group_btn"
+    />
+
+</LinearLayout>
